@@ -1,5 +1,5 @@
 # Приложение-конвертер на базе фреймворка Fast-API
-![Иллюстрация к проекту](static/cUrl_Fetch_to_Python_Converter.jpg)
+![Иллюстрация к проекту](./app/static/cUrl_Fetch_to_Python_Converter.jpg)
 
 ## Установка проекта
 Проект нужно скачать из открытого репозитория:

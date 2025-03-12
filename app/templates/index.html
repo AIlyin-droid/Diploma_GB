@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cURL/Fetch to Python Converter</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>cURL/Fetch to Python Converter</h1>
+
+    <div class="tabs">
+      <button class="tab-button active" data-tab="curl">cURL</button>
+      <button class="tab-button" data-tab="fetch">Fetch</button>
+    </div>
+
+    <div class="input-area" id="curl-tab">
+      <label for="curlInput">cURL Request:</label>
+      <div class="input-group">
+        <textarea id="curlInput" placeholder="Enter cURL request here"></textarea>
+        <button id="clearCurl">Clear</button>
+      </div>
+    </div>
+
+    <div class="input-area" id="fetch-tab" style="display: none;">
+      <label for="fetchInput">Fetch Request:</label>
+      <div class="input-group">
+        <textarea id="fetchInput" placeholder="Enter Fetch request here"></textarea>
+        <button id="clearFetch">Clear</button>
+      </div>
+    </div>
+
+    <div class="options">
+      <label for="librarySelect">Choose Python Library:</label>
+      <select id="librarySelect">
+        <option value="requests">requests</option>
+        <option value="httpx">httpx</option>
+      </select>
+    </div>
+
+    <button id="convertButton">Convert to Python</button>
+    <br>
+    </br>
+    <div class="output-area">
+      <label for="pythonOutput">Python Code:</label>
+      <textarea id="pythonOutput" placeholder="Converted Python code will appear here" readonly></textarea>
+      <br>
+      </br>
+      <button id="copyButton">Copy to Clipboard</button>
+    </div>
+
+    <div id="notification">
+      Code Copied to Clipboard!
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
